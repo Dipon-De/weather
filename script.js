@@ -1,4 +1,6 @@
-const apiKey = config.apiKey; // API key from config.js
+// const apiKey = config.apiKey;                // API key from config.js      for locally run 
+
+const apiKey = process.env.NEXT_PUBLIC_API_KEY; // api key for deployment     for public 
 
 const weatherDataEle = document.querySelector(".weather-data");
 const cityNameEle = document.querySelector("#city-name");
