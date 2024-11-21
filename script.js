@@ -1,6 +1,9 @@
 // const apiKey = config.apiKey;                // API key from config.js      for locally run 
 
-const apiKey = process.env.NEXT_PUBLIC_API_KEY; // api key for deployment     for public 
+// const apiKey = process.env.NEXT_PUBLIC_API_KEY; // api key for deployment     for public 
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
 
 const weatherDataEle = document.querySelector(".weather-data");
 const cityNameEle = document.querySelector("#city-name");
